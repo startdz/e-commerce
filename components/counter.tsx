@@ -7,7 +7,11 @@ export const Counter = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <Button radius="full" onPress={() => setCount(count + 1)} className="bg-primaries">
+    <Button
+      className="bg-primaries"
+      radius="full"
+      onPress={() => setCount(count + 1)}
+    >
       Count is {count}
     </Button>
   );
